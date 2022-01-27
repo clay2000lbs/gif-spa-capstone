@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  justify-content:space-between;
+}
+
+.sub-nav {
+  display: flex;
+}
+
+.sub-nav h3 {
+  margin: 10px;
+}
+
+.content {
+  margin-left: 10%;
+}
