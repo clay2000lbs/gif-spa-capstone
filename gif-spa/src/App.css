@@ -14,3 +14,11 @@
 .content {
   margin-left: 10%;
 }
+
+body {
+  background-color: #121212;
+  margin: 10px;
+  padding: 0;
+  color: white;
+  font-size: 14px;
+}
