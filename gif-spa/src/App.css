@@ -2,6 +2,10 @@
   display: flex;
   justify-content:space-between;
 }
+.nav h1 {
+  margin-left: 10%;
+  font-size: 32px;
+}
 
 .sub-nav {
   display: flex;
