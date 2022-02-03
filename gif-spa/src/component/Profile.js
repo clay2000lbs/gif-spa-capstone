@@ -1,23 +1,22 @@
-import React, {useEffect, useState} from 'react';
-import axios from 'axios';
+import React from 'react';
 import CarouselDemo from './CarouselDemo';
 
 
 function Profile() {
 
-  // const [fav, setFav] = useState([])
-
-  // useEffect(()=> {
-  //   axios.get('http://localhost:4000/api/favs').then((res) => {
-  //     console.log(res.data)
-  //     setFav(res.data)
-  //   })
-  // },[]); 
-  // console.log(fav)
-  
   return (
-    <div className="carouselContainer"> 
-      <CarouselDemo />
+    <div>
+      <container>
+        <div>
+          <h2>Favorite Searches</h2>
+          <li>
+            Dogs
+          </li>
+        </div>
+      </container>
+      <div className="carouselContainer"> 
+        <CarouselDemo />
+      </div>
     </div>
   );
 }

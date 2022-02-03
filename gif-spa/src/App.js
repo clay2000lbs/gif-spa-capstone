@@ -6,6 +6,7 @@ import {Route, Routes} from 'react-router';
 import Profile from './component/Profile.js';
 import SignUp from './component/SignUp';
 import Login from './component/Login';
+import Nav from './component/Nav'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div className="App">
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile props={fav} />} />

@@ -1,15 +1,18 @@
 const users = require(`./db.json`)
 const Sequelize = require('sequelize')
+require("dotenv").config();
+const {DATABASE_URL} = process.env
 let globalId = 4
 
-const sequelize = new Sequelize(`postgres://kahmzrimptgonw:bb016cfd988d038efa9dfe01652386afba840f482063e0af48095a6070f71dfb@ec2-54-157-15-228.compute-1.amazonaws.com:5432/d5p23r3vqu9act`, {
+const sequelize = new Sequelize(DATABASE_URL, {
     dialect: 'postgres', 
     dialectOptions: {
         ssl: {
+            require:true,
             rejectUnauthorized: false
-        }
-    }
-})
+        },
+    },
+});
 
 
 module.exports = {

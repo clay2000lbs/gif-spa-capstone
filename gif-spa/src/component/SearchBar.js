@@ -12,6 +12,7 @@ const SearchBar = () => (
             name="s" 
         />
         <button type="submit">Search</button>
+        <button>Add Search to Favorites</button>
     </form>
 );
 

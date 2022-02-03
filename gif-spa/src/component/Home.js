@@ -6,7 +6,6 @@ import Search from './Search'
 function Home() {
   return (
        <div>
-           <Nav />
            <Search />
            <Content />
        </div>
