@@ -7,6 +7,11 @@
   font-size: 32px;
 }
 
+.nav img {
+  width: 10%;
+  height:10%;
+}
+
 .sub-nav {
   display: flex;
 }
@@ -25,4 +30,36 @@ body {
   padding: 0;
   color: white;
   font-size: 14px;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.search {
+  margin: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carouselContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  margin-top: 10%;
+  margin-left: 10%;
 }
